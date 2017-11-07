@@ -3,6 +3,7 @@ package ricky.chen.bcit.ca.contactcontentprovider;
 import android.content.ContentProviderOperation;
 import android.content.ContentProviderResult;
 import android.content.Context;
+import android.content.Intent;
 import android.content.OperationApplicationException;
 import android.os.RemoteException;
 import android.provider.ContactsContract;
@@ -70,6 +71,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void view(View v){
-
+        Intent it = new Intent(this,ContactActivity.class);
+        startActivity(it);
     }
 }
